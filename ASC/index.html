@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Автоматизированная система</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Julee&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <h1>автоматизированная система контроля расходов организации</h1>
+</header>
+<div class="container">
+    <div>
+        <div class="table">
+            <div class="company">
+                <h2>Компания</h2>
+            </div>
+            <div class="line">
+            </div>
+        </div>
+        <div class="containerF">
+            <h3>СОСТАВ РАСХОДОВ</h3>
+
+            <div class="comp">
+                <label>Компания</label>
+                <input type="text">
+            </div>
+            <div class="head">
+                <p1>Наименование</p1>
+                <p2>Номер</p2>
+                <p3>Дата</p3>
+                <p4>Сумма</p4>
+            </div>
+            <div class="formname">
+                <div class="name">
+                    <p>1.</p>
+                    <input type="text">
+                </div>
+                <div class="number">
+                    <input type="number">
+                </div>
+                <div class="date">
+                    <input type="date"  placeholder="Дата">
+                </div>
+                <div class="summ">
+                    <input type="number" step="0.01" min="0" placeholder="Сумма">
+                </div>
+            </div>
+            <div class="formname">
+                <div class="name">
+                    <p>2.</p>
+                    <input type="text">
+                </div>
+                <div class="number">
+                    <input type="number">
+                </div>
+                <div class="date">
+                    <input type="date" placeholder="Дата">
+                </div>
+                <div class="summ">
+                    <input type="number" step="0.01" min="0" placeholder="Сумма">
+                </div>
+            </div>
+            <div class="formname">
+                <div class="name">
+                    <p>3.</p>
+                    <input type="text">
+                </div>
+                <div class="number">
+                    <input type="number">
+                </div>
+                <div class="date">
+                    <input type="date" placeholder="Дата">
+                </div>
+                <div class="summ">
+                    <input type="number" step="0.01" min="0" placeholder="Сумма">
+                </div>
+            </div>
+            <a href="search.html" class="btn">Добавить +</a>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="table">
+            <div class="company">
+                <h2>Контрагенты</h2>
+            </div>
+
+        </div>
+        <div class="containerF">
+            <h3>СОСТАВ ДОХОДОВ</h3>
+            <div class="comp2">
+                <label>1) Контрагент</label>
+                <input type="text">
+            </div>
+                <div class="head">
+                    <p1>Наименование</p1>
+                    <p2>Номер</p2>
+                    <p3>Дата</p3>
+                    <p4>Сумма</p4>
+                </div>
+                <div class="formname">
+                    <div class="name">
+                        <p>1.</p>
+                        <input type="text">
+                    </div>
+                    <div class="number">
+                        <input type="number">
+                    </div>
+                    <div class="date">
+                        <input type="date" placeholder="Дата">
+                    </div>
+                    <div class="summ">
+                        <input type="number" step="0.01" min="0" placeholder="Сумма">
+                    </div>
+                </div>
+                <div class="formname">
+                    <div class="name">
+                        <p>2.</p>
+                        <input type="text">
+                    </div>
+                    <div class="number">
+                        <input type="number">
+                    </div>
+                    <div class="date">
+                        <input type="date" placeholder="Дата">
+                    </div>
+                    <div class="summ">
+                        <input type="number" step="0.01" min="0" placeholder="Сумма">
+                    </div>
+                </div>
+            <a href="search.html" class="btn">Добавить +</a>
+            <div class="comp2">
+                <label>2) Контрагент</label>
+                <input type="text">
+            </div>
+
+                <div class="formname">
+                    <div class="name">
+                        <p>1.</p>
+                        <input type="text">
+                    </div>
+                    <div class="number">
+                        <input type="number">
+                    </div>
+                    <div class="date">
+                        <input type="date" placeholder="Дата">
+                    </div>
+                    <div class="summ">
+                        <input type="number" step="0.01" min="0" placeholder="Сумма">
+                    </div>
+                </div>
+
+                <a href="#" class="btn">Добавить +</a>
+                <a href="#" class="btn2">Добавить контрагента +</a>
+        </div>
+    </div>
+    <div class="parent">
+    </div>
+<!--    <div id="parent" class="parent" onclick="change("dark")">-->
+        <div id="report" class="report">
+            <p>* ОТЧЕТ *</p>
+            <div class="line2"></div>
+            <p>Полное сходство</p>
+            <div class="line2"></div>
+            <a href="#" class="btn4">Закрыть</a>
+        </div>
+        <div id="reportErr" class="reportErr">
+            <p>* ОТЧЕТ *</p>
+            <div class="line2"></div>
+            <p>ОШИБКА</p>
+            <p> ..... </p>
+            <div class="line2"></div>
+            <a href="#" class="btn4">Закрыть</a>
+        </div>
+
+</div>
+    <div class="footer">
+        <div class="serchA">
+            <a href="#" class="btn3">СРАВНИТЬ</a>
+        </div>
+    </div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
